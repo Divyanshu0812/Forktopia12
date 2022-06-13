@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css" />
+    <title>Register !</title>
+</head>
+
+<body>
+    <section>
+        <div class="colour"></div>
+        <div class="colour"></div>
+        <div class="colour"></div>
+
+        <div class="box">
+            <div class="square" style="--i: 0"></div>
+            <div class="square" style="--i: 1"></div>
+            <div class="square" style="--i: 2"></div>
+            <div class="square" style="--i: 3"></div>
+            <div class="square" style="--i: 4"></div>
+
+            <div class="container">
+                <div class="form" onsubmit="sendEmail(); reset(); return false;">
+                    <h2>Register Form</h2>
+                    <form>
+                        <div class="input_box">
+                            <input type="text" placeholder="Username " required>
+                        </div>
+                        <div class="input_box">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="input_box">
+                            <input type="number" placeholder="Number" required>
+                        </div>
+                        <div class="input_box">
+                            <input type="email" placeholder="Email Adress" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Register</button>
+                        <p class="forget">Already Registered! <a href="login.html">Sign In</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="email.js"> </script>
+
+</body>
+
+</html>
